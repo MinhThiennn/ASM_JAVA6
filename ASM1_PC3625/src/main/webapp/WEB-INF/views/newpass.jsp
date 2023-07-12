@@ -92,18 +92,22 @@ color: white;
 <body>
 	<div id="wrapper">
         <form method="post" id="form-login">
-            <h1 class="form-heading">FORGOT PASSWORD</h1><br>              
+            <h1 class="form-heading">NEW PASSWORD</h1><br>              
             <div class="form-group">
-                <i class="fas fa-user"></i>
-                <input type="text" class="form-input" placeholder="User name">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <input type="text" class="form-input" placeholder="Appcept code">
             </div>
             <div class="form-group">
-                <i class="fas fa-envelope"></i>
-                <input type="email" class="form-input" placeholder="Email">
+              <i class="fas fa-key"></i>
+                <input type="password" class="form-input" placeholder="New password">
             </div>
             <div class="form-group">
-			<input type="submit" formaction="/index" value="back" class="form-submit">
-            <input type="submit" formaction="/newpass" value="confirm" class="form-submit">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input" placeholder="Confirm password">
+            </div>
+            <div class="form-group">
+			<input type="submit" formaction="/forgotpass" value="back" class="form-submit">
+            <input type="submit" formaction="/login" value="confirm" class="form-submit">
             </div>
         </form>
     </div>

@@ -10,6 +10,10 @@ public class AccountController {
 	public String forgotpass() {
 		return "forgotpass";
 	}
+	@RequestMapping("newpass")
+	public String newpass() {
+		return "newpass";
+	}
 	@RequestMapping("changepass")
 	public String changepass() {
 		return "changepass";

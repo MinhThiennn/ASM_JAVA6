@@ -39,7 +39,7 @@
               <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
             </div>
 
-            <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
+            <p class="small mb-5 pb-lg-2"><a class="text-muted" href="/forgotpass">Forgot password?</a></p>
             <p>Don't have an account? <a href="#!" class="link-info">Register here</a></p>
 
           </form>

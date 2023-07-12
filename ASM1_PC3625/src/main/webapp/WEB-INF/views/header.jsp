@@ -4,18 +4,40 @@
 <html>
 <head>
 <title>3F Store</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/jquery.js?1688468460344" type="text/javascript"></script>
-<link rel="stylesheet" as="style" type="text/css"href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/bootstrap.css?1688468460344"onload="this.rel='stylesheet'">
-<link href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/bootstrap.css?1688468460344"rel="stylesheet" type="text/css" media="all">
-<link rel="stylesheet" as="style" type="text/css"href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/main.scss.css?1688468460344"onload="this.rel='stylesheet'">
-<link href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/main.scss.css?1688468460344"rel="stylesheet" type="text/css" media="all">
-<link rel="stylesheet" as="style" type="text/css"href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/index.scss.css?1688468460344"onload="this.rel='stylesheet'">
-<link href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/index.scss.css?1688468460344"rel="stylesheet" type="text/css" media="all">
-<link rel="stylesheet" as="style" type="text/css"href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/swiper.scss.css?1688468460344"onload="this.rel='stylesheet'">
-<link href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/swiper.scss.css?1688468460344"rel="stylesheet" type="text/css" media="all">
-<link href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/appbulk-available-notice.css?1688468460344"rel="stylesheet" type="text/css" media="all">
-<link href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/appbulk-available-notice.css?1688468460344" rel="stylesheet" type="text/css" media="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+	src="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/jquery.js?1688468460344"
+	type="text/javascript"></script>
+<link rel="stylesheet" as="style" type="text/css"
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/bootstrap.css?1688468460344"
+	onload="this.rel='stylesheet'">
+<link
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/bootstrap.css?1688468460344"
+	rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" as="style" type="text/css"
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/main.scss.css?1688468460344"
+	onload="this.rel='stylesheet'">
+<link
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/main.scss.css?1688468460344"
+	rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" as="style" type="text/css"
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/index.scss.css?1688468460344"
+	onload="this.rel='stylesheet'">
+<link
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/index.scss.css?1688468460344"
+	rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" as="style" type="text/css"
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/swiper.scss.css?1688468460344"
+	onload="this.rel='stylesheet'">
+<link
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/swiper.scss.css?1688468460344"
+	rel="stylesheet" type="text/css" media="all">
+<link
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/appbulk-available-notice.css?1688468460344"
+	rel="stylesheet" type="text/css" media="all">
+<link
+	href="//bizweb.dktcdn.net/100/487/588/themes/910644/assets/appbulk-available-notice.css?1688468460344"
+	rel="stylesheet" type="text/css" media="all">
 <style type="text/css">
 button.btn[data-v-f3fb3dc8] {
 	display: inline-block;
@@ -191,61 +213,129 @@ button.btn.btn-danger[data-v-f3fb3dc8] {
 	transform: translate3d(0, 0, 0)
 }
 
-@keyframes shake-f3fb3dc8 { 10%,90%{
+@
+keyframes shake-f3fb3dc8 { 10%,90%{
 	transform: translate3d(-1px, 0, 0)
 }
-20%,80%
+
+20
+%
+,
+80
+%
 {
-transform:translate3d(2px,0,0)
+transform
+:
+translate3d(
+2px
+,
+0
+,
+0
+)
 }
-30%,50%,70%
+30
+%
+,
+50
+%
+,
+70
+%
 {
-transform:translate3d(-4px,0,0)
+transform
+:
+translate3d(
+-4px
+,
+0
+,
+0
+)
 }
-40%,60%
+40
+%
+,
+60
+%
 {
-transform:translate3d(4px,0,0)
+transform
+:
+translate3d(
+4px
+,
+0
+,
+0
+)
 }
 }
 .pulse[data-v-f3fb3dc8] {
 	animation: pulse-f3fb3dc8 2s ease infinite
 }
 
-@keyframes pulse-f3fb3dc8 { 0%{
+@
+keyframes pulse-f3fb3dc8 { 0%{
 	opacity: 0.7
 }
-50%{opacity:0.4}
-100%
+
+50
+%
 {
-opacity:0.7
+opacity
+:
+0.4
+}
+100
+%
+{
+opacity
+:
+0.7
 }
 }
 .flash-once[data-v-f3fb3dc8] {
 	animation: flash-once 3.5s ease 1
 }
 
-@keyframes fade-up-f3fb3dc8 { 0%{
+@
+keyframes fade-up-f3fb3dc8 { 0%{
 	transform: translate3d(0, 10px, 0);
 	opacity: 0
 }
 
-100%
+100
+%
 {
-transform:translate3d(0,0,0);
-opacity:1
+transform
+:
+translate3d(
+0
+,
+0
+,
+0
+);
+opacity
+:
+1
 }
 }
 .fade-in[data-v-f3fb3dc8] {
 	animation: fade-in-f3fb3dc8 0.3s ease-in-out
 }
 
-@keyframes fade-in-f3fb3dc8 { 0%{
+@
+keyframes fade-in-f3fb3dc8 { 0%{
 	opacity: 0
 }
 
-100%
+100
+%
 {
-opacity:1
+opacity
+:
+1
 }
 }
 .spin[data-v-f3fb3dc8] {
@@ -255,7 +345,8 @@ opacity:1
 	animation-timing-function: linear
 }
 
-@keyframes spin-f3fb3dc8 {
+@
+keyframes spin-f3fb3dc8 {
 	from {transform: rotate(0deg)
 }
 
@@ -272,77 +363,274 @@ to {
 	animation-iteration-count: 1
 }
 
-@keyframes bounceIn-f3fb3dc8 { 0%,20%,40%,60%,80%,100%{
+@
+keyframes bounceIn-f3fb3dc8 { 0%,20%,40%,60%,80%,100%{
 	-webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
 }
 
-0%
+0
+%
 {
-opacity:1;
--webkit-transform:scale3d(0.8,0.8,0.8);
-transform:scale3d(0.8,0.8,0.8)
+opacity
+:
+1;
+-webkit-transform
+:
+scale3d(
+0.8
+,
+0.8
+,
+0.8
+);
+transform
+:
+scale3d(
+0.8
+,
+0.8
+,
+0.8
+)
 }
-20%
+20
+%
 {
--webkit-transform:scale3d(1.1,1.1,1.1);
-transform:scale3d(1.1,1.1,1.1)
+-webkit-transform
+:
+scale3d(
+1.1
+,
+1.1
+,
+1.1
+);
+transform
+:
+scale3d(
+1.1
+,
+1.1
+,
+1.1
+)
 }
-40%
+40
+%
 {
--webkit-transform:scale3d(0.9,0.9,0.9);
-transform:scale3d(0.9,0.9,0.9)
+-webkit-transform
+:
+scale3d(
+0.9
+,
+0.9
+,
+0.9
+);
+transform
+:
+scale3d(
+0.9
+,
+0.9
+,
+0.9
+)
 }
-60%
+60
+%
 {
-opacity:1;
--webkit-transform:scale3d(1.03,1.03,1.03);
-transform:scale3d(1.03,1.03,1.03)
+opacity
+:
+1;
+-webkit-transform
+:
+scale3d(
+1.03
+,
+1.03
+,
+1.03
+);
+transform
+:
+scale3d(
+1.03
+,
+1.03
+,
+1.03
+)
 }
-80%
+80
+%
 {
--webkit-transform:scale3d(0.97,0.97,0.97);
-transform:scale3d(0.97,0.97,0.97)
+-webkit-transform
+:
+scale3d(
+0.97
+,
+0.97
+,
+0.97
+);
+transform
+:
+scale3d(
+0.97
+,
+0.97
+,
+0.97
+)
 }
-100%
+100
+%
 {
-opacity:1;
--webkit-transform:scale3d(1,1,1);
-transform:scale3d(1,1,1)
+opacity
+:
+1;
+-webkit-transform
+:
+scale3d(
+1
+,
+1
+,
+1
+);
+transform
+:
+scale3d(
+1
+,
+1
+,
+1
+)
 }
 }
-@keyframes dots-f3fb3dc8 { 0%,20%{
+@
+keyframes dots-f3fb3dc8 { 0%,20%{
 	color: rgba(0, 0, 0, 0);
 	text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
 }
 
-40%
+40
+%
 {
-color:#8492a6;
-text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)
+color
+:
+#8492a6;
+text-shadow
+:
+0.25em
+0
+0
+rgba(
+0
+,
+0
+,
+0
+,
+0
+)
+,
+0.5em
+0
+0
+rgba(
+0
+,
+0
+,
+0
+,
+0
+)
 }
-60%
+60
+%
 {
-text-shadow:0.25em 0 0 #8492a6,0.5em 0 0 rgba(0,0,0,0)
+text-shadow
+:
+0.25em
+0
+0
+#8492a6
+,
+0.5em
+0
+0
+rgba(
+0
+,
+0
+,
+0
+,
+0
+)
 }
-80%,100%
+80
+%
+,
+100
+%
 {
-text-shadow:0.25em 0 0 #8492a6,0.5em 0 0 #8492a6 
+text-shadow
+:
+0.25em
+0
+0
+#8492a6
+,
+0.5em
+0
+0
+#8492a6
 }
 }
-@keyframes recording-f3fb3dc8 { 0%{
+@
+keyframes recording-f3fb3dc8 { 0%{
 	box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3)
 }
 
-65%
+65
+%
 {
-box-shadow:0px 0px 5px 5px rgba(173,0,0,0.3)
-}
-90%
-{
-box-shadow:0px0px5px5px
+box-shadow
+:
+0px
+0px
+5px
+5px
 rgba(
-173,0,0,0
+173
+,
+0
+,
+0
+,
+0.3
+)
+}
+90
+%
+{
+box-shadow
+:
+0px0px5px5px
+rgba(
+173
+,
+0
+,
+0
+,
+0
 )
 }
 }
@@ -454,8 +742,8 @@ svg[data-v-f3fb3dc8] {
 												href="#" title="Thông tin"> Thông tin </a> <i
 												class="fa fa-caret-down"></i>
 												<ul class="item_small">
-													<li><a class="nav-item" href="gioithieu" title="Giới thiệu">
-															Giới thiệu </a></li>
+													<li><a class="nav-item" href="gioithieu"
+														title="Giới thiệu"> Giới thiệu </a></li>
 													<li><a class="nav-item" href="chinhsachbaomat"
 														title="Chính sách bảo mật"> Chính sách bảo mật </a></li>
 													<li><a class="nav-item" href="chinhsachgiaohang"
@@ -466,10 +754,10 @@ svg[data-v-f3fb3dc8] {
 													<li><a class="nav-item" href="chinhsachdoi-trahang"
 														title="Chính sách đổi hàng - trả hàng"> Chính sách đổi
 															hàng - trả hàng </a></li>
-													<li><a class="nav-item" href="chinhsachhoantien" title="Chính sách hoàn tiền">
-															Chính sách hoàn tiền </a></li>
-													<li><a class="nav-item" href="dieukhoansudung" title="Điều khoản sử dụng">
-															Điều khoản sử dụng </a></li>
+													<li><a class="nav-item" href="chinhsachhoantien"
+														title="Chính sách hoàn tiền"> Chính sách hoàn tiền </a></li>
+													<li><a class="nav-item" href="dieukhoansudung"
+														title="Điều khoản sử dụng"> Điều khoản sử dụng </a></li>
 												</ul></li>
 											<li class="nav-item "><a class="a-img caret-down"
 												href="" title="Sản phẩm"> Sản phẩm </a> <i
@@ -620,8 +908,8 @@ svg[data-v-f3fb3dc8] {
 									<div class="drop-account">
 
 
-										<a href="login">Đăng nhập</a> <a href="register">Đăng ký</a>
-
+										<a href="login">Đăng nhập</a> <a href="register">Đăng ký</a> <a
+											href="/changepass">Đổi mật khẩu</a> <a href="/forgotpass">Quên mật khẩu</a>
 
 									</div>
 								</li>
@@ -635,7 +923,7 @@ svg[data-v-f3fb3dc8] {
 		</div>
 	</div>
 	<jsp:include page="slidenav.jsp" />
-	
+
 
 
 
@@ -645,9 +933,15 @@ svg[data-v-f3fb3dc8] {
 
 	<script src="https://code.jquery.com/jquery-3.7.0.js"
 		integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-		crossorigin="anonymous"></script>	
-			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>		
-		
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+		integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+		crossorigin="anonymous"></script>
+
 </body>
 </html>
