@@ -28,10 +28,7 @@
           <form style="width: 23rem;">
 
 
-            <div class="form-outline mb-4">
-              <input type="email" id="form2Example18" class="form-control form-control-lg" />
-              <label class="form-label" for="form2Example18">Email address</label>
-            </div>
+           
 
             <div class="form-outline mb-4">
               <input type="password" id="form2Example28" class="form-control form-control-lg" />
