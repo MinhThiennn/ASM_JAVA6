@@ -76,22 +76,6 @@ input:focus::placeholder {
 .form-submit:hover{
     border: 1px solid #54a0ff;
 }
-.Back{
-color: white;
-width: 50px;
-text-decoration: none;
-}
-.Back:hover{
-color: #54a0ff;
-}
-.TA{
-margin-left: 340px;
-margin-top: 20px;
-}
-h5{
-color: white;
-
-}
 </style>
 <body>
 	<div id="wrapper">
