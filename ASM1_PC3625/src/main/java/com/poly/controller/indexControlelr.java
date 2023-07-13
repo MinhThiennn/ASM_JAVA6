@@ -52,5 +52,8 @@ public class indexControlelr {
 		return "login";
 	}
 	
-	
+	@RequestMapping("favorites")
+	public String favorites() {
+		return "favorites";
+	}
 }
