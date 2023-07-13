@@ -18,4 +18,13 @@ public class AccountController {
 	public String changepass() {
 		return "changepass";
 	}
+	@RequestMapping("dangky")
+	public String dangky() {
+		return "dangky";
+	}
+	
+	@RequestMapping("profile")
+	public String thongtinkhachang() {
+		return "profile";
+	}
 }
