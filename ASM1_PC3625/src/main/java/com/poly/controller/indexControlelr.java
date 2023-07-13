@@ -49,6 +49,10 @@ public class indexControlelr {
 	
 	@RequestMapping("login")
 	public String login() {
-		return "login";
+		return "login1";
+	}
+	@RequestMapping("register")
+	public String register() {
+		return "register";
 	}
 }
