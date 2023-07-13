@@ -908,9 +908,9 @@ svg[data-v-f3fb3dc8] {
 									<div class="drop-account">
 
 
-										<a href="login">Đăng nhập</a> <a href="register">Đăng ký</a> <a
+										<a href="login">Đăng nhập</a> <a href="/dangky">Đăng ký</a> <a
 											href="/changepass">Đổi mật khẩu</a> <a href="/forgotpass">Quên mật khẩu</a>
-
+										<a href="/profile">Sửa Thông Tin</a>
 									</div>
 								</li>
 
