@@ -198,10 +198,11 @@
 							<ul class="group-account">
 								<li>
 									<div class="icon">
-										<a href="favorites" class="wishlist_header" title="Sản phẩm yêu thích">
-											<svg enable-background="new 0 0 412.735 412.735"
-												version="1.1" viewBox="0 0 412.74 412.74"
-												xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path
+										<a href="favorites" class="wishlist_header"
+											title="Sản phẩm yêu thích"> <svg
+												enable-background="new 0 0 412.735 412.735" version="1.1"
+												viewBox="0 0 412.74 412.74" xml:space="preserve"
+												xmlns="http://www.w3.org/2000/svg"> <path
 													d="m295.71 35.522c-34.43-0.184-67.161 14.937-89.339 41.273-22.039-26.516-54.861-41.68-89.339-41.273-64.633 0-117.03 52.395-117.03 117.03 0 110.76 193.31 218.91 201.14 223.09 3.162 2.113 7.286 2.113 10.449 0 7.837-4.18 201.14-110.76 201.14-223.09 0-64.633-52.396-117.03-117.03-117.03zm-89.339 319.22c-30.302-17.763-185.47-112.33-185.47-202.19 0-53.091 43.039-96.131 96.131-96.131 32.512-0.427 62.938 15.972 80.457 43.363 3.557 4.905 10.418 5.998 15.323 2.44 0.937-0.68 1.761-1.503 2.44-2.44 29.055-44.435 88.631-56.903 133.07-27.848 27.202 17.787 43.575 48.114 43.521 80.615 1e-3 90.907-155.17 184.95-185.47 202.19z"></path> </svg>
 											<span class="headerWishlistCount">1</span>
 										</a>
@@ -241,8 +242,8 @@
 
 
 										<a href="login">Đăng nhập</a> <a href="/dangky">Đăng ký</a> <a
-											href="/changepass">Đổi mật khẩu</a> <a href="/forgotpass">Quên mật khẩu</a>
-										<a href="/profile">Sửa Thông Tin</a>
+											href="/changepass">Đổi mật khẩu</a> <a href="/forgotpass">Quên
+											mật khẩu</a> <a href="/profile">Sửa Thông Tin</a>
 									</div>
 								</li>
 
@@ -274,6 +275,265 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
 		integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
 		crossorigin="anonymous"></script>
+
+	<link
+		href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+		rel="stylesheet" id="bootstrap-css">
+	<script
+		src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+	<div class="container">
+		<div class="row">
+
+
+			<div class="col-md-12">
+				<h4>Your Oder History</h4>
+				<div class="table-responsive">
+
+
+					<table id="mytable" class="table table-bordred table-striped">
+
+						<thead>
+
+							<th><input type="checkbox" id="checkall" /></th>
+							<th>Ho</th>
+							<th>ten</th>
+							<th>dia chi</th>
+							<th>Email</th>
+							<th>so dien thoai</th>
+							<th>sua</th>
+
+							<th>xoa</th>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td><input type="checkbox" class="checkthis" /></td>
+								<td>Mohsin</td>
+								<td>Irshad</td>
+								<td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+								<td>isometric.mohsin@gmail.com</td>
+								<td>+923335586757</td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Edit">
+										<button class="btn btn-primary btn-xs" data-title="Edit"
+											data-toggle="modal" data-target="#edit">
+											<span class="glyphicon glyphicon-pencil"></span>
+										</button>
+									</p></td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Delete">
+										<button class="btn btn-danger btn-xs" data-title="Delete"
+											data-toggle="modal" data-target="#delete">
+											<span class="glyphicon glyphicon-trash"></span>
+										</button>
+									</p></td>
+							</tr>
+
+							<tr>
+								<td><input type="checkbox" class="checkthis" /></td>
+								<td>Mohsin</td>
+								<td>Irshad</td>
+								<td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+								<td>isometric.mohsin@gmail.com</td>
+								<td>+923335586757</td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Edit">
+										<button class="btn btn-primary btn-xs" data-title="Edit"
+											data-toggle="modal" data-target="#edit">
+											<span class="glyphicon glyphicon-pencil"></span>
+										</button>
+									</p></td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Delete">
+										<button class="btn btn-danger btn-xs" data-title="Delete"
+											data-toggle="modal" data-target="#delete">
+											<span class="glyphicon glyphicon-trash"></span>
+										</button>
+									</p></td>
+							</tr>
+
+
+							<tr>
+								<td><input type="checkbox" class="checkthis" /></td>
+								<td>Mohsin</td>
+								<td>Irshad</td>
+								<td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+								<td>isometric.mohsin@gmail.com</td>
+								<td>+923335586757</td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Edit">
+										<button class="btn btn-primary btn-xs" data-title="Edit"
+											data-toggle="modal" data-target="#edit">
+											<span class="glyphicon glyphicon-pencil"></span>
+										</button>
+									</p></td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Delete">
+										<button class="btn btn-danger btn-xs" data-title="Delete"
+											data-toggle="modal" data-target="#delete">
+											<span class="glyphicon glyphicon-trash"></span>
+										</button>
+									</p></td>
+							</tr>
+
+
+
+							<tr>
+								<td><input type="checkbox" class="checkthis" /></td>
+								<td>Mohsin</td>
+								<td>Irshad</td>
+								<td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+								<td>isometric.mohsin@gmail.com</td>
+								<td>+923335586757</td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Edit">
+										<button class="btn btn-primary btn-xs" data-title="Edit"
+											data-toggle="modal" data-target="#edit">
+											<span class="glyphicon glyphicon-pencil"></span>
+										</button>
+									</p></td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Delete">
+										<button class="btn btn-danger btn-xs" data-title="Delete"
+											data-toggle="modal" data-target="#delete">
+											<span class="glyphicon glyphicon-trash"></span>
+										</button>
+									</p></td>
+							</tr>
+
+
+							<tr>
+								<td><input type="checkbox" class="checkthis" /></td>
+								<td>Mohsin</td>
+								<td>Irshad</td>
+								<td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+								<td>isometric.mohsin@gmail.com</td>
+								<td>+923335586757</td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Edit">
+										<button class="btn btn-primary btn-xs" data-title="Edit"
+											data-toggle="modal" data-target="#edit">
+											<span class="glyphicon glyphicon-pencil"></span>
+										</button>
+									</p></td>
+								<td><p data-placement="top" data-toggle="tooltip"
+										title="Delete">
+										<button class="btn btn-danger btn-xs" data-title="Delete"
+											data-toggle="modal" data-target="#delete">
+											<span class="glyphicon glyphicon-trash"></span>
+										</button>
+									</p></td>
+							</tr>
+
+
+
+
+
+						</tbody>
+
+					</table>
+
+					<div class="clearfix"></div>
+					<ul class="pagination pull-right">
+						<li class="disabled"><a href="#"><span
+								class="glyphicon glyphicon-chevron-left"></span></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><span
+								class="glyphicon glyphicon-chevron-right"></span></a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="edit" tabindex="-1" role="dialog"
+		aria-labelledby="edit" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+					<h4 class="modal-title custom_align" id="Heading">Edit Your
+						Detail</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<input class="form-control " type="text" placeholder="Mohsin">
+					</div>
+					<div class="form-group">
+
+						<input class="form-control " type="text" placeholder="Irshad">
+					</div>
+					<div class="form-group">
+						<textarea rows="2" class="form-control"
+							placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
+
+
+					</div>
+				</div>
+				<div class="modal-footer ">
+					<button type="button" class="btn btn-warning btn-lg"
+						style="width: 100%;">
+						<span class="glyphicon glyphicon-ok-sign"></span> Update
+					</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+
+
+
+	<div class="modal fade" id="delete" tabindex="-1" role="dialog"
+		aria-labelledby="edit" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+					<h4 class="modal-title custom_align" id="Heading">Delete this
+						entry</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="alert alert-danger">
+						<span class="glyphicon glyphicon-warning-sign"></span> Are you
+						sure you want to delete this Record?
+					</div>
+
+				</div>
+				<div class="modal-footer ">
+					<button type="button" class="btn btn-success">
+						<span class="glyphicon glyphicon-ok-sign"></span> Yes
+					</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">
+						<span class="glyphicon glyphicon-remove"></span> No
+					</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
 
 </body>
 </html>

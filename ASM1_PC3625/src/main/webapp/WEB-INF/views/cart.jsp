@@ -42,7 +42,7 @@
 
 
 <!-- Poly -->
-<link href="../Asm-TaiNguyen/css/index.css" rel="stylesheet" />
+<link href="../Asm-TaiNguyen/css/cart.css" rel="stylesheet" />
 </head>
 <body>
 	<div class="header">
@@ -198,10 +198,11 @@
 							<ul class="group-account">
 								<li>
 									<div class="icon">
-										<a href="favorites" class="wishlist_header" title="Sản phẩm yêu thích">
-											<svg enable-background="new 0 0 412.735 412.735"
-												version="1.1" viewBox="0 0 412.74 412.74"
-												xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path
+										<a href="favorites" class="wishlist_header"
+											title="Sản phẩm yêu thích"> <svg
+												enable-background="new 0 0 412.735 412.735" version="1.1"
+												viewBox="0 0 412.74 412.74" xml:space="preserve"
+												xmlns="http://www.w3.org/2000/svg"> <path
 													d="m295.71 35.522c-34.43-0.184-67.161 14.937-89.339 41.273-22.039-26.516-54.861-41.68-89.339-41.273-64.633 0-117.03 52.395-117.03 117.03 0 110.76 193.31 218.91 201.14 223.09 3.162 2.113 7.286 2.113 10.449 0 7.837-4.18 201.14-110.76 201.14-223.09 0-64.633-52.396-117.03-117.03-117.03zm-89.339 319.22c-30.302-17.763-185.47-112.33-185.47-202.19 0-53.091 43.039-96.131 96.131-96.131 32.512-0.427 62.938 15.972 80.457 43.363 3.557 4.905 10.418 5.998 15.323 2.44 0.937-0.68 1.761-1.503 2.44-2.44 29.055-44.435 88.631-56.903 133.07-27.848 27.202 17.787 43.575 48.114 43.521 80.615 1e-3 90.907-155.17 184.95-185.47 202.19z"></path> </svg>
 											<span class="headerWishlistCount">1</span>
 										</a>
@@ -228,7 +229,7 @@
 								</li>
 								<li class="user">
 									<div class="icon">
-										<a href="/admin" title="Tài khoản của bạn" rel="nofollow">
+										<a href="/account" title="Tài khoản của bạn" rel="nofollow">
 											<svg xmlns="http://www.w3.org/2000/svg"
 												xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
 												height="25px">
@@ -241,8 +242,8 @@
 
 
 										<a href="login">Đăng nhập</a> <a href="/dangky">Đăng ký</a> <a
-											href="/changepass">Đổi mật khẩu</a> <a href="/forgotpass">Quên mật khẩu</a>
-										<a href="/profile">Sửa Thông Tin</a>
+											href="/changepass">Đổi mật khẩu</a> <a href="/forgotpass">Quên
+											mật khẩu</a> <a href="/profile">Sửa Thông Tin</a>
 									</div>
 								</li>
 
@@ -254,14 +255,8 @@
 			</div>
 		</div>
 	</div>
+
 	<jsp:include page="slidenav.jsp" />
-
-
-
-
-
-
-
 
 	<script src="https://code.jquery.com/jquery-3.7.0.js"
 		integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
@@ -275,5 +270,125 @@
 		integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
 		crossorigin="anonymous"></script>
 
+	<link
+		href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+		rel="stylesheet" id="bootstrap-css">
+	<script
+		src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<div class="row">
+								<div class="col-xs-6">
+									<h5>
+										<span class="glyphicon glyphicon-shopping-cart"></span>
+										Shopping Cart
+									</h5>
+								</div>
+								<div class="col-xs-6">
+									<button type="button" class="btn btn-primary btn-sm btn-block">
+										<span class="glyphicon glyphicon-share-alt"></span> Continue
+										shopping
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-2">
+								<img class="img-responsive" src="http://placehold.it/100x70">
+							</div>
+							<div class="col-xs-4">
+								<h4 class="product-name">
+									<strong>Product name</strong>
+								</h4>
+								<h4>
+									<small>Product description</small>
+								</h4>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-xs-6 text-right">
+									<h6>
+										<strong>25.00 <span class="text-muted">x</span></strong>
+									</h6>
+								</div>
+								<div class="col-xs-4">
+									<input type="text" class="form-control input-sm" value="1">
+								</div>
+								<div class="col-xs-2">
+									<button type="button" class="btn btn-link btn-xs">
+										<span class="glyphicon glyphicon-trash"> </span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-xs-2">
+								<img class="img-responsive" src="http://placehold.it/100x70">
+							</div>
+							<div class="col-xs-4">
+								<h4 class="product-name">
+									<strong>Product name</strong>
+								</h4>
+								<h4>
+									<small>Product description</small>
+								</h4>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-xs-6 text-right">
+									<h6>
+										<strong>25.00 <span class="text-muted">x</span></strong>
+									</h6>
+								</div>
+								<div class="col-xs-4">
+									<input type="text" class="form-control input-sm" value="1">
+								</div>
+								<div class="col-xs-2">
+									<button type="button" class="btn btn-link btn-xs">
+										<span class="glyphicon glyphicon-trash"> </span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="text-center">
+								<div class="col-xs-9">
+									<h6 class="text-right">Added items?</h6>
+								</div>
+								<div class="col-xs-3">
+									<button type="button" class="btn btn-default btn-sm btn-block">
+										Update cart</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<div class="row text-center">
+							<div class="col-xs-9">
+								<h4 class="text-right">
+									Total <strong>$50.00</strong>
+								</h4>
+							</div>
+							<div class="col-xs-3">
+								<button type="button" class="btn btn-success btn-block">
+									Checkout</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
+
 </html>

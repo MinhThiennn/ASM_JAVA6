@@ -56,4 +56,16 @@ public class indexControlelr {
 	public String favorites() {
 		return "favorites";
 	}
+	@RequestMapping("cart")
+	public String cart() {
+		return "cart";
+	}
+	@RequestMapping("admin")
+	public String admin() {
+		return "admin";
+	}
+	@RequestMapping("history")
+	public String history() {
+		return "history";
+	}
 }
