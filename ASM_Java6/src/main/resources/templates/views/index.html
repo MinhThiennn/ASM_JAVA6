@@ -246,7 +246,7 @@
 										<div class="col-lg-12">
 											<div class="row">
 												<div class="swiper-slide swiper-slide-active col-xl-3" role="group"
-													style="width: 230px; margin: 1px;">
+													style="width: 230px; margin: 1px;" th:each="pm:${meoitems}">
 													<div class=" item_product_main" style="width: 229px;">
 														<div class="product-block-item">
 															<div class="product-transition" style="height: 221px;">
@@ -254,9 +254,8 @@
 																	title="[400g] Hạt Whiskas Dành Cho Mèo Trên 12 Tháng Tuổi Vị Cá Biển"
 																	class="product-thumb">
 																	<img class="product-thumbnail lazy loaded"
-																		src="../Asm-TaiNguyen/images/Hạt Whiskas Dành Cho Mèo Vị Cá Biển.webp"
+																		th:src="@{|../Asm-TaiNguyen/images/${pm.image}|}"
 																		data-src="//bizweb.dktcdn.net/thumb/large/100/487/588/products/vn-11134201-23030-ln3qbmqhcvovde-1680750063759.jpg?v=1686218677000"
-																		alt="[400g] Hạt Whiskas Dành Cho Mèo Trên 12 Tháng Tuổi Vị Cá Biển"
 																		data-was-processed="true">
 																</a>
 																<div class="product-action">
@@ -272,12 +271,10 @@
 																				d="m295.71 35.522c-34.43-0.184-67.161 14.937-89.339 41.273-22.039-26.516-54.861-41.68-89.339-41.273-64.633 0-117.03 52.395-117.03 117.03 0 110.76 193.31 218.91 201.14 223.09 3.162 2.113 7.286 2.113 10.449 0 7.837-4.18 201.14-110.76 201.14-223.09 0-64.633-52.396-117.03-117.03-117.03zm-89.339 319.22c-30.302-17.763-185.47-112.33-185.47-202.19 0-53.091 43.039-96.131 96.131-96.131 32.512-0.427 62.938 15.972 80.457 43.363 3.557 4.905 10.418 5.998 15.323 2.44 0.937-0.68 1.761-1.503 2.44-2.44 29.055-44.435 88.631-56.903 133.07-27.848 27.202 17.787 43.575 48.114 43.521 80.615 1e-3 90.907-155.17 184.95-185.47 202.19z">
 																			</path>
 																		</svg></a>
-																	<form action="/cart/add" method="post"
+																	<form action="" method="post"
 																		enctype="multipart/form-data"
 																		class="group-buttons variants form-nut-grid form-ajaxtocart has-validation-callback"
 																		data-id="product-actions-31262388">
-
-
 																		<a href="#" class="action cart-button"
 																			rel="nofollow" title="Tùy chọn">
 																			<svg xmlns="http://www.w3.org/2000/svg"
@@ -300,11 +297,9 @@
 															<div class="product-info">
 																<a href="#"
 																	title="[400g] Hạt Whiskas Dành Cho Mèo Trên 12 Tháng Tuổi Vị Cá Biển"
-																	class="item-product-name">[400g] Hạt Whiskas Dành
-																	Cho Mèo Trên
-																	12 Tháng Tuổi Vị Cá Biển</a>
+																	class="item-product-name" th:text="${pm.name}"></a>
 																<div class="product__price">
-																	<span class="price">35.000₫</span>
+																	<span class="price">[[${pm.price}]]₫</span>
 																</div>
 															</div>
 
@@ -425,7 +420,7 @@
 										<div class="col-lg-12">
 											<div class="row">
 												<div class="swiper-slide swiper-slide-active col-xl-3" role="group"
-													style="width: 230px; margin: 1px;">
+													style="width: 230px; margin: 1px;" th:each="pc:${choitems}">
 													<div class=" item_product_main" style="width: 229px;">
 														<div class="product-block-item">
 															<div class="product-transition" style="height: 221px;">
@@ -433,15 +428,14 @@
 																	title="Bánh Thưởng Cho Chó Dạng Kem Smartheart"
 																	class="product-thumb">
 																	<img class="product-thumbnail lazy loaded"
-																		src="../Asm-TaiNguyen/images/Bánh Thưởng Cho Chó Dạng Kem Smartheart.webp"
+																		th:src="@{|../Asm-TaiNguyen/images/${pc.image}|}"
 																		data-src="//bizweb.dktcdn.net/thumb/large/100/487/588/products/vn-11134201-23030-ln3qbmqhcvovde-1680750063759.jpg?v=1686218677000"
-																		alt="Bánh Thưởng Cho Chó Dạng Kem Smartheart"
 																		data-was-processed="true">
 																</a>
 																<div class="product-action">
 																	<a href="#"
 																		class="action btn-compare js-btn-wishlist setWishlist btn-views active"
-																		data-wish="400g-hat-whiskas-danh-cho-meo-tren-12-thang-tuoi-vi-ca-bien"
+																		data-wish=""
 																		tabindex="0" title="Yêu thích"><svg
 																			enable-background="new 0 0 412.735 412.735"
 																			version="1.1" viewBox="0 0 412.74 412.74"
@@ -451,7 +445,7 @@
 																				d="m295.71 35.522c-34.43-0.184-67.161 14.937-89.339 41.273-22.039-26.516-54.861-41.68-89.339-41.273-64.633 0-117.03 52.395-117.03 117.03 0 110.76 193.31 218.91 201.14 223.09 3.162 2.113 7.286 2.113 10.449 0 7.837-4.18 201.14-110.76 201.14-223.09 0-64.633-52.396-117.03-117.03-117.03zm-89.339 319.22c-30.302-17.763-185.47-112.33-185.47-202.19 0-53.091 43.039-96.131 96.131-96.131 32.512-0.427 62.938 15.972 80.457 43.363 3.557 4.905 10.418 5.998 15.323 2.44 0.937-0.68 1.761-1.503 2.44-2.44 29.055-44.435 88.631-56.903 133.07-27.848 27.202 17.787 43.575 48.114 43.521 80.615 1e-3 90.907-155.17 184.95-185.47 202.19z">
 																			</path>
 																		</svg></a>
-																	<form action="/cart/add" method="post"
+																	<form action="" method="post"
 																		enctype="multipart/form-data"
 																		class="group-buttons variants form-nut-grid form-ajaxtocart has-validation-callback"
 																		data-id="product-actions-31262388">
@@ -479,10 +473,9 @@
 															<div class="product-info">
 																<a href="#"
 																	title="Bánh Thưởng Cho Chó Dạng Kem Smartheart"
-																	class="item-product-name">Bánh Thưởng Cho Chó Dạng
-																	Kem Smartheart</a>
+																	class="item-product-name" th:text="${pc.name}"></a>
 																<div class="product__price">
-																	<span class="price">8.000₫</span>
+																	<span class="price">$[[${pc.price}]]₫</span>
 																</div>
 															</div>
 
