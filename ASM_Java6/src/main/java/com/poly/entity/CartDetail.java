@@ -18,13 +18,14 @@ import lombok.Data;
 
 @SuppressWarnings("serial")
 @Data
-@Entity @Table(name = "CartDetails")
+@Entity @Table(name = "Cartdetails")
 public class CartDetail implements Serializable{
 	
 	@Id	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Integer id;
 	Integer quantity;
+	
 	@Temporal(TemporalType.DATE)
 	@Column(name = "Createdate")
 	Date createDate = new Date();

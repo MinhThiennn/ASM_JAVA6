@@ -1,7 +1,6 @@
 package com.poly.dao;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -10,5 +9,5 @@ import com.poly.entity.Product;
 
 public interface ProductDAO extends JpaRepository<Product, Integer>{
 
-	List<Product> findByCategory(Optional<Category> category);
+	List<Product> findByCategory(Category category);
 }

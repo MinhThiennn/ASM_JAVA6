@@ -22,11 +22,11 @@ public class Account  implements Serializable{
 	String username;
 	String password;
 	String email;
-	Integer admin;
+	Boolean admin;
 	String fullname;	
 	String sdt;
 	String address;
-	Integer activated;
+	Boolean activated;
 	String image;	
 	
 	@JsonIgnore
@@ -40,4 +40,8 @@ public class Account  implements Serializable{
 	@JsonIgnore
 	@OneToMany(mappedBy = "account")
 	List<Cart> carts;
+	
+	@JsonIgnore
+	@OneToMany(mappedBy = "account", fetch = FetchType.EAGER)
+	List<Authority> authorities;
 }
