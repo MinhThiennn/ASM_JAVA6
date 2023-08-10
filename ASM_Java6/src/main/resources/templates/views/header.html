@@ -157,12 +157,13 @@
 												</ul>
 											</li>
 
-
-
-											<li class="nav-item "><a class="a-img" href="" title="Tin tức"> Tin tức </a>
+											<li class="nav-item " th:unless="${#request.remoteUser}">
+												<a class="a-img" title="Tin tức">Tin tức</a>
 											</li>
-
-
+											
+											<li class="nav-item " th:if="${#request.isUserInRole('DIRE') or #request.isUserInRole('STAF')}">
+												<a class="a-img" th:href="@{/admin}" title="Admin"> Admin </a>
+											</li>
 
 											<li class="nav-item " th:if="${#request.remoteUser}"><a
 												class="a-img" href="" title="Kiểm tra đơn hàng"> Kiểm

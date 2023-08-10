@@ -67,4 +67,9 @@ public class HomeController {
 	public String chinhsachhoantien() {
 		return "views/chinhsachhoantien";
 	}
+	
+	@GetMapping("admin")
+	public String admin() {
+		return "views/admin";
+	}
 }
