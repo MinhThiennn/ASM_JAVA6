@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{/views/header::head}">
+</head>
+
+<body ng-app="shopping-cart-app" ng-controller="shopping-cart-ctrl">
+
+	<div th:replace="~{/views/header::header}"></div>
+	<div th:replace="~{/views/slidenav::sildenav}"></div>
+
+	<hr style="border: 1px solid white">
+	<section class="awe-section-2">
+		<section class="section_category">
+			<div class="container">
+				<div class="cate-list">
+					<div class="swiper-container swiper-container-initialized swiper-container-horizontal"
+						style="cursor: grab;">
+						<div class="swiper-wrapper" id="swiper-wrapper-200032b862f1f078" aria-live="polite"
+							style="transform: translate3d(0px, 0px, 0px);">
+							<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6"
+								style="width: 188px; margin-right: 30px;">
+								<div class="cate-item">
+									<a class="image" href="thuc-an-danh-cho-cho" title="Thức ăn<br>dành cho chó"> <img
+											class="image_cate_thumb lazy loaded" width="241" height="220"
+											src="../Asm-TaiNguyen/images/cate_1.webp" data-src=""
+											alt="Thức ăn<br>dành cho chó" data-was-processed="true">
+									</a>
+									<h3 class="title_cate_">
+										<a href="thuc-an-danh-cho-cho" title="Thức ăn<br>dành cho chó">Thức
+											ăn<br>dành cho chó
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6"
+								style="width: 188px; margin-right: 30px;">
+								<div class="cate-item">
+									<a class="image" href="thuc-an-danh-cho-meo" title="Thức ăn<br>dành cho mèo"> <img
+											class="image_cate_thumb lazy loaded" width="241" height="220"
+											src="../Asm-TaiNguyen/images/cate_2.webp" data-src=""
+											alt="Thức ăn<br>dành cho mèo" data-was-processed="true">
+									</a>
+									<h3 class="title_cate_">
+										<a href="thuc-an-danh-cho-meo" title="Thức ăn<br>dành cho mèo">Thức
+											ăn<br>dành cho mèo
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="swiper-slide" role="group" aria-label="3 / 6"
+								style="width: 188px; margin-right: 30px;">
+								<div class="cate-item">
+									<a class="image" href="phu-kien-cho-thu-cung" title="Phụ kiện<br>cho thú cưng"> <img
+											class="image_cate_thumb lazy loaded" width="241" height="220"
+											src="../Asm-TaiNguyen/images/cate_3.webp" data-src=""
+											alt="Phụ kiện<br>cho thú cưng" data-was-processed="true">
+									</a>
+									<h3 class="title_cate_">
+										<a href="phu-kien-cho-thu-cung" title="Phụ kiện<br>cho thú cưng">Phụ kiện<br>cho
+											thú
+											cưng
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="swiper-slide" role="group" aria-label="4 / 6"
+								style="width: 188px; margin-right: 30px;">
+								<div class="cate-item">
+									<a class="image" href="cham-soc-suc-khoe" title="Chăm sóc<br>sức khỏe"> <img
+											class="image_cate_thumb lazy loaded" width="241" height="220"
+											src="../Asm-TaiNguyen/images/cate_4.webp" data-src=""
+											alt="Chăm sóc<br>sức khỏe" data-was-processed="true">
+									</a>
+									<h3 class="title_cate_">
+										<a href="cham-soc-suc-khoe" title="Chăm sóc<br>sức khỏe">Chăm
+											sóc<br>sức khỏe
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="swiper-slide" role="group" aria-label="5 / 6"
+								style="width: 188px; margin-right: 30px;">
+								<div class="cate-item">
+									<a class="image" href="ve-sinh-cho-thu-cung" title="Vệ sinh<br>thú cưng"> <img
+											class="image_cate_thumb lazy loaded" width="241" height="220"
+											src="../Asm-TaiNguyen/images/cate_5.webp" data-src=""
+											alt="Vệ sinh<br>thú cưng" data-was-processed="true">
+									</a>
+									<h3 class="title_cate_">
+										<a href="ve-sinh-cho-thu-cung" title="Vệ sinh<br>thú cưng">Vệ
+											sinh<br>thú cưng
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="swiper-slide" role="group" aria-label="6 / 6"
+								style="width: 188px; margin-right: 30px;">
+								<div class="cate-item">
+									<a class="image" href="4paws" title="On sale"> <img
+											class="image_cate_thumb lazy loaded" width="241" height="220"
+											src="../Asm-TaiNguyen/images/cate_6.webp" data-src="" alt="On sale"
+											data-was-processed="true">
+									</a>
+									<h3 class="title_cate_">
+										<a href="4paws" title="On sale">On sale</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="awe-section-4">
+		<div class="section_banner">
+			<div class="container">
+				<div class="banner-swiper swiper-container swiper-container-initialized swiper-container-horizontal"
+					style="cursor: grab;">
+					<div class="swiper-wrapper" id="swiper-wrapper-53b91a8a7ac62199" aria-live="polite"
+						style="transform: translate3d(0px, 0px, 0px);">
+						<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
+							style="width: 630px; margin-right: 20px;">
+							<a href="#" class="clearfix" title="Thức ăn cho chó">
+								<picture>
+									<img width="630" height="280" src="../Asm-TaiNguyen/images/banner_1.webp"
+										alt="Thức ăn cho chó" class="img-responsive center-block">
+								</picture>
+							</a>
+						</div>
+						<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
+							style="width: 630px; margin-right: 20px;">
+							<a href="#" class="clearfix" title="Thức ăn cho mèo">
+								<picture>
+									<img width="630" height="280" src="../Asm-TaiNguyen/images/banner_2.webp"
+										alt="Thức ăn cho mèo" class="img-responsive center-block">
+								</picture>
+							</a>
+						</div>
+
+					</div>
+					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="awe-section-5">
+		<div class="section_product product_1" id="product_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-4 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="title-links">
+									<h2>
+										<a href="#" title="Thức ăn dành cho mèo">Thức ăn dành cho
+											mèo</a>
+									</h2>
+
+									<div class="btn-more-cate d-md-none">
+										<svg aria-hidden="true" focusable="false" data-prefix="fal"
+											data-icon="ellipsis-h" role="img" xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 320 512" class="svg-inline--fa fa-ellipsis-h fa-w-10">
+											<path fill="currentColor"
+												d="M192 256c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32zm88-32c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm-240 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"
+												class=""></path>
+										</svg>
+									</div>
+
+									<div class="block-cate">
+										<ul>
+
+											<li><a href="#" title="Thức ăn khô dành cho Mèo"> <span class="icon"> <svg
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															viewBox="0 0 29.107 29.107"
+															style="enable-background: new 0 0 29.107 29.107;"
+															xml:space="preserve">
+															<g>
+																<g>
+																	<g>
+																		<path
+																			d="M14.554,0C6.561,0,0,6.562,0,14.552c0,7.996,6.561,14.555,14.554,14.555c7.996,0,14.553-6.559,14.553-14.555     C29.106,6.562,22.55,0,14.554,0z">
+																		</path>
+																	</g>
+																</g>
+																<g> </g>
+															</g>
+														</svg>
+													</span> <span class="text"> Thức ăn khô dành cho Mèo </span>
+												</a></li>
+
+											<li><a href="#" title="Thức ăn ướt cho Mèo"> <span class="icon"> <svg
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															viewBox="0 0 29.107 29.107"
+															style="enable-background: new 0 0 29.107 29.107;"
+															xml:space="preserve">
+															<g>
+																<g>
+																	<g>
+																		<path
+																			d="M14.554,0C6.561,0,0,6.562,0,14.552c0,7.996,6.561,14.555,14.554,14.555c7.996,0,14.553-6.559,14.553-14.555     C29.106,6.562,22.55,0,14.554,0z">
+																		</path>
+																	</g>
+																</g>
+																<g> </g>
+															</g>
+														</svg>
+													</span> <span class="text"> Thức ăn ướt cho Mèo </span>
+												</a></li>
+
+										</ul>
+										<div class="view-more">
+											<a href="#" title="Mua sắm ngay bây giờ!">Mua sắm ngay
+												bây giờ!</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xl-9 col-lg-9 col-md-8 col-12">
+						<div class="block-product">
+							<div class="swiper-container swiper-container-initialized swiper-container-horizontal"
+								style="cursor: grab;">
+								<div class="row">
+									<div class="swiper-wrapper" id="swiper-wrapper-38266184e0b46bde"
+										style="transform: translate3d(0px, 0px, 0px);">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="swiper-slide swiper-slide-active col-xl-3" role="group"
+													style="width: 230px; margin: 1px;" th:each="pm:${meoitems}">
+													<div class=" item_product_main" style="width: 229px;">
+														<div class="product-block-item">
+															<div class="product-transition" style="height: 221px;">
+																<a href="#" title="${pm.name}" class="product-thumb">
+																	<img class="product-thumbnail lazy loaded"
+																		th:src="@{|../Asm-TaiNguyen/images/${pm.image}|}"
+																		data-src="//bizweb.dktcdn.net/thumb/large/100/487/588/products/vn-11134201-23030-ln3qbmqhcvovde-1680750063759.jpg?v=1686218677000"
+																		data-was-processed="true">
+																</a>
+																<div class="product-action">
+																	<a href="#"
+																		class="action btn-compare js-btn-wishlist setWishlist btn-views active"
+																		data-wish="${pm.name}" tabindex="0"
+																		title="Yêu thích"><svg
+																			enable-background="new 0 0 412.735 412.735"
+																			version="1.1" viewBox="0 0 412.74 412.74"
+																			xml:space="preserve"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="m295.71 35.522c-34.43-0.184-67.161 14.937-89.339 41.273-22.039-26.516-54.861-41.68-89.339-41.273-64.633 0-117.03 52.395-117.03 117.03 0 110.76 193.31 218.91 201.14 223.09 3.162 2.113 7.286 2.113 10.449 0 7.837-4.18 201.14-110.76 201.14-223.09 0-64.633-52.396-117.03-117.03-117.03zm-89.339 319.22c-30.302-17.763-185.47-112.33-185.47-202.19 0-53.091 43.039-96.131 96.131-96.131 32.512-0.427 62.938 15.972 80.457 43.363 3.557 4.905 10.418 5.998 15.323 2.44 0.937-0.68 1.761-1.503 2.44-2.44 29.055-44.435 88.631-56.903 133.07-27.848 27.202 17.787 43.575 48.114 43.521 80.615 1e-3 90.907-155.17 184.95-185.47 202.19z">
+																			</path>
+																		</svg></a>
+																	<button th:attr="ng-click=@{|cart.add(${pm.id})|}"
+																		class="action add_to_cart cart-button"
+																		rel="nofollow" title="Mua ngay"> <svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			height="25px" viewBox="0 -31 512.00026 512"
+																			width="25px">
+																			<path
+																				d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0">
+																			</path>
+																			<path
+																				d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0">
+																			</path>
+																			<path
+																				d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0">
+																			</path>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-info">
+																<a href="#" title="${pm.name}" class="item-product-name"
+																	th:text="${pm.name}"></a>
+																<div class="product__price">
+																	<span class="price">[[${pm.price}]]₫</span>
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="awe-section-6">
+		<div class="section_product product_2" id="product_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-4 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="title-links">
+									<h2>
+										<a href="thuc-an-danh-cho-cho" title="Thức ăn dành cho chó">Thức
+											ăn dành cho chó</a>
+									</h2>
+
+									<div class="btn-more-cate d-md-none">
+										<svg aria-hidden="true" focusable="false" data-prefix="fal"
+											data-icon="ellipsis-h" role="img" xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 320 512" class="svg-inline--fa fa-ellipsis-h fa-w-10">
+											<path fill="currentColor"
+												d="M192 256c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32zm88-32c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm-240 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"
+												class=""></path>
+										</svg>
+									</div>
+
+									<div class="block-cate">
+										<ul>
+
+											<li><a href="/thuc-an-kho-cho-cho" title="Thức ăn khô cho Chó"> <span
+														class="icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															viewBox="0 0 29.107 29.107"
+															style="enable-background: new 0 0 29.107 29.107;"
+															xml:space="preserve">
+															<g>
+																<g>
+																	<g>
+																		<path
+																			d="M14.554,0C6.561,0,0,6.562,0,14.552c0,7.996,6.561,14.555,14.554,14.555c7.996,0,14.553-6.559,14.553-14.555     C29.106,6.562,22.55,0,14.554,0z">
+																		</path>
+																	</g>
+																</g>
+																<g> </g>
+															</g>
+														</svg>
+													</span> <span class="text"> Thức ăn khô cho Chó </span>
+												</a></li>
+
+											<li><a href="/thuc-an-uot-cho-cho" title="Thức ăn ướt cho Chó"> <span
+														class="icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															viewBox="0 0 29.107 29.107"
+															style="enable-background: new 0 0 29.107 29.107;"
+															xml:space="preserve">
+															<g>
+																<g>
+																	<g>
+																		<path
+																			d="M14.554,0C6.561,0,0,6.562,0,14.552c0,7.996,6.561,14.555,14.554,14.555c7.996,0,14.553-6.559,14.553-14.555     C29.106,6.562,22.55,0,14.554,0z">
+																		</path>
+																	</g>
+																</g>
+																<g> </g>
+															</g>
+														</svg>
+													</span> <span class="text"> Thức ăn ướt cho Chó </span>
+												</a></li>
+
+										</ul>
+										<div class="view-more">
+											<a href="thuc-an-danh-cho-cho" title="Mua sắm ngay bây giờ!">Mua
+												sắm ngay bây giờ!</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-lg-9 col-md-8 col-12">
+						<div class="block-product">
+							<div class="swiper-container swiper-container-initialized swiper-container-horizontal"
+								style="cursor: grab;">
+								<div class="row">
+									<div class="swiper-wrapper" id="swiper-wrapper-fe5489156ef4b04a" aria-live="polite"
+										style="transform: translate3d(0px, 0px, 0px);">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="swiper-slide swiper-slide-active col-xl-3" role="group"
+													style="width: 230px; margin: 1px;" th:each="pc:${choitems}">
+													<div class=" item_product_main" style="width: 229px;">
+														<div class="product-block-item">
+															<div class="product-transition" style="height: 221px;">
+																<a href="#" title="${pc.name}" class="product-thumb">
+																	<img class="product-thumbnail lazy loaded"
+																		th:src="@{|../Asm-TaiNguyen/images/${pc.image}|}"
+																		data-src="//bizweb.dktcdn.net/thumb/large/100/487/588/products/vn-11134201-23030-ln3qbmqhcvovde-1680750063759.jpg?v=1686218677000"
+																		data-was-processed="true">
+																</a>
+																<div class="product-action">
+																	<a href="#"
+																		class="action btn-compare js-btn-wishlist setWishlist btn-views active"
+																		data-wish="${pc.name}" tabindex="0"
+																		title="Yêu thích"><svg
+																			enable-background="new 0 0 412.735 412.735"
+																			version="1.1" viewBox="0 0 412.74 412.74"
+																			xml:space="preserve"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="m295.71 35.522c-34.43-0.184-67.161 14.937-89.339 41.273-22.039-26.516-54.861-41.68-89.339-41.273-64.633 0-117.03 52.395-117.03 117.03 0 110.76 193.31 218.91 201.14 223.09 3.162 2.113 7.286 2.113 10.449 0 7.837-4.18 201.14-110.76 201.14-223.09 0-64.633-52.396-117.03-117.03-117.03zm-89.339 319.22c-30.302-17.763-185.47-112.33-185.47-202.19 0-53.091 43.039-96.131 96.131-96.131 32.512-0.427 62.938 15.972 80.457 43.363 3.557 4.905 10.418 5.998 15.323 2.44 0.937-0.68 1.761-1.503 2.44-2.44 29.055-44.435 88.631-56.903 133.07-27.848 27.202 17.787 43.575 48.114 43.521 80.615 1e-3 90.907-155.17 184.95-185.47 202.19z">
+																			</path>
+																		</svg></a>
+																	<a th:attr="ng-click=@{|cart.add(${pc.id})|}"
+																		class="action add_to_cart cart-button"
+																		rel="nofollow" title="Mua ngay"> <svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			height="25px" viewBox="0 -31 512.00026 512"
+																			width="25px">
+																			<path
+																				d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0">
+																			</path>
+																			<path
+																				d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0">
+																			</path>
+																			<path
+																				d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0">
+																			</path>
+																		</svg>
+																	</a>
+
+																</div>
+															</div>
+															<div class="product-info">
+																<a href="#" title="${pc.name}" class="item-product-name"
+																	th:text="${pc.name}"></a>
+																<div class="product__price">
+																	<span class="price">[[${pc.price}]]₫</span>
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div th:replace="~{/views/footer::footer}"></div>
+</body>
+
+</html>
