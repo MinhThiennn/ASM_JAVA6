@@ -8,10 +8,18 @@ import com.poly.entity.Product;
 public interface ProductService {
 
 	List<Product> findAll();
+	Product findById(Integer id);
 	
 	List<Product> findByCategory(Category category);
 	
 	Product findById(Integer id);
 
+	List<Product> findByCategoryId(Integer id);
+
+	Product create(Product product);
+
+	Product update(Product product);
+
+	void delete(Integer id);
 
 }
