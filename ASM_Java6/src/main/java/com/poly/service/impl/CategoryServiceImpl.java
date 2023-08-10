@@ -1,6 +1,6 @@
 package com.poly.service.impl;
 
-import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,5 +18,4 @@ public class CategoryServiceImpl implements CategoySevice{
 	public Optional<Category> findById(Integer id){
 		return categoryDao.findById(id);
 	}
-
 }
