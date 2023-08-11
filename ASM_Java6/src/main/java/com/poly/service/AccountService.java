@@ -1,5 +1,6 @@
 package com.poly.service;
 
+<<<<<<< HEAD
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,3 +24,11 @@ public class AccountService {
     }
 }
 
+=======
+import com.poly.entity.Account;
+
+public interface AccountService {
+	
+	Account findById(String username);
+}
+>>>>>>> f116c7ac0dab46974b91c399d8283f0e5908798e

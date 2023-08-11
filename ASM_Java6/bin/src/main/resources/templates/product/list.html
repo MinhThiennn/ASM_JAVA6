@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+	integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+	crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<head  th:replace="~{/views/header::head}">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.table-bordered {
+	margin-left: 50px;
+	margin-top: 50px;
+	width: 82%;
+}
+
+button {
+	width: 60px;
+	height: 35px;
+}
+</style>
+</head>
+<body>
+    <div th:replace="~{/views/header::header}"></div>
+	<div th:replace="~{/views/slidenav::sildenav}"></div>
+	<form action="">
+		<div class="col-lg-4">
+			<div class="form-group" id="form-login">
+				<input type="text" class="form-input" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-input" placeholder="Price">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-input" placeholder="Quantity">
+			</div>
+		</div>
+		<div class="col-lg-8">
+			<div class="form-group" id="form-login">
+				<input type="text" class="form-input" placeholder="CreateDate">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-input" placeholder="Caterogyid">
+			</div>
+			<div class="form-group">
+
+				<input type="password" class="form-input" placeholder="Available">
+			</div>
+		</div>
+		<div class="form-group">
+			<button>Add</button>
+			<button>Delete</button>
+			<button>Edit</button>
+			<button>Reset</button>
+		</div>
+	</form>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>CreateDate</th>
+				<th>Caterogyid</th>
+				<th>Image</th>
+				<th>Available</th>
+				<th style="width: 60px;"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Sử dụng vòng lặp th:each để duyệt qua từng sản phẩm trong danh sách -->
+			<tr th:each="product : ${items}">
+				<!-- Hiển thị các thông tin của từng sản phẩm trong từng ô của bảng -->
+				<td th:text="${product.id}"></td>
+				<td th:text="${product.name}"></td>
+				<td th:text="${product.price}"></td>
+				<td th:text="${product.quantity}"></td>
+				<td th:text="${#dates.format(product.createDate, 'yyyy-MM-dd')}"></td>
+				<!-- Hiển thị tên danh mục của sản phẩm -->
+				<td th:text="${product.category.name}"></td>
+				<td>				<!-- Hiển thị hình ảnh sản phẩm --> <img
+					th:src="@{/path/to/images/} + ${product.image}" alt="Product Image"
+					width="100" height="100">
+				</td>
+				<td>
+					<!-- Hiển thị trạng thái sản phẩm --> <span
+					th:if="${product.available}">Available</span> <span
+					th:unless="${product.available}">Not Available</span>
+				</td>
+				<td><a><i class="glyphicon glyphicon-trash"></i></a> <a><i
+						class="glyphicon glyphicon-pencil"></i> </a></td>
+			</tr>
+		</tbody>
+	</table>
+	<div th:replace="~{/views/footer::footer}"></div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+		integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
+	</script>
+</body>
+</html>

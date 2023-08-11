@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.poly.entity.Category;
 import com.poly.entity.Product;
-import com.poly.service.CategoySevice;
+import com.poly.service.CategorySevice;
 import com.poly.service.ProductService;
 
 
@@ -22,15 +22,15 @@ public class HomeController {
 	ProductService productService;
 	
 	@Autowired
-	CategoySevice categoySevice;
+	CategorySevice categorySevice;
 	
 	@GetMapping("/")
 	public String index(Model model) {
-		Optional<Category> cho = categoySevice.findById(10);
+		Category cho = categorySevice.findById(10);
 		List<Product> choitems = productService.findByCategory(cho);
 		model.addAttribute("choitems", choitems);
 		
-		Optional<Category> meo = categoySevice.findById(9);
+		Category meo = categorySevice.findById(9);
 		List<Product> meoitems = productService.findByCategory(meo);
 		model.addAttribute("meoitems", meoitems);
 		
@@ -72,5 +72,10 @@ public class HomeController {
 	@GetMapping("chinhsachhoantien")
 	public String chinhsachhoantien() {
 		return "views/chinhsachhoantien";
+	}
+	
+	@GetMapping("admin")
+	public String admin() {
+		return "views/admin";
 	}
 }

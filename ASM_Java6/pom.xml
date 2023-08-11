@@ -23,6 +23,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
+<<<<<<< HEAD
 		<!--		<dependency>-->
 		<!--			<groupId>org.springframework.boot</groupId>-->
 		<!--			<artifactId>spring-boot-starter-oauth2-client</artifactId>-->
@@ -31,6 +32,16 @@
 		<!--			<groupId>org.springframework.boot</groupId>-->
 		<!--			<artifactId>spring-boot-starter-security</artifactId>-->
 		<!--		</dependency>-->
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+>>>>>>> f116c7ac0dab46974b91c399d8283f0e5908798e
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -43,10 +54,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+<<<<<<< HEAD
 		<!--		<dependency>-->
 		<!--			<groupId>org.thymeleaf.extras</groupId>-->
 		<!--			<artifactId>thymeleaf-extras-springsecurity5</artifactId>-->
 		<!--		</dependency>-->
+=======
+		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
+		</dependency>
+
+>>>>>>> f116c7ac0dab46974b91c399d8283f0e5908798e
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -72,6 +91,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<!--		<dependency>-->
 		<!--			<groupId>org.springframework.security</groupId>-->
 		<!--			<artifactId>spring-security-test</artifactId>-->
@@ -81,6 +101,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
+=======
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+>>>>>>> f116c7ac0dab46974b91c399d8283f0e5908798e
 		</dependency>
 	</dependencies>
 	<build>
