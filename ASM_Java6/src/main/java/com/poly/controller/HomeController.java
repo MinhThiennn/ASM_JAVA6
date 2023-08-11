@@ -36,8 +36,14 @@ public class HomeController {
 		
 		return "views/index";
 	}
-	
-	
+	@GetMapping("/forgotpass")
+	public String forgotpass() {
+		return "views/forgotpass";
+	}
+	@GetMapping("/changepass")
+	public String changepass() {
+		return "views/changepass";
+	}
 	
 	@GetMapping("/gioithieu")
 	public String gioithieu() {

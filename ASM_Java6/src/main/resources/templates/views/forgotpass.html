@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>FORGOT PASSWORD</title>
@@ -61,7 +61,7 @@ input:focus::placeholder {
     background: transparent;
     border: 1px solid #f5f5f5;
     color: #fff;
-    width: 100%;
+    width: 48%; /* Sửa đổi kích thước nút */
     text-transform: uppercase;
     padding: 6px 10px;
     transition: 0.25s ease-in-out;
@@ -70,27 +70,35 @@ input:focus::placeholder {
 .form-submit:hover{
     border: 1px solid #54a0ff;
 }
+.form-submit:last-child {
+    margin-left: 4%; /* Tạo khoảng cách giữa các nút */
+}
 </style>
 <body>
 	<div id="wrapper">
-        <form method="post" id="form-login">
+        <form method="post" id="form-login" action="/send-otp"> <!-- Thay thế "/send-otp" bằng đường dẫn tới endpoint xử lý POST request -->
             <h1 class="form-heading">FORGOT PASSWORD</h1><br>              
             <div class="form-group">
-                <i class="fas fa-user"></i>
-                <input type="text" class="form-input" placeholder="User name">
-            </div>
-            <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input type="email" class="form-input" placeholder="Email">
+                <input type="text" class="form-input" name="email" placeholder="Email">
+
             </div>
             <div class="form-group">
-			<input type="submit" formaction="/index" value="back" class="form-submit">
-            <input type="submit" formaction="/newpass" value="confirm" class="form-submit">
+                <input type="button" value="Back" class="form-submit" onclick="goBack()">
+                <input type="submit" formaction="send-otp" value="confirm" class="form-submit">
             </div>
-        </form>
+            <div th:if="${error}" class="error-message">
+        <p th:text="${error}"></p>
     </div>
+        </form>
+        
+    </div>
+    
+    <script>
+        function goBack() {
+            window.history.back(); // Sử dụng hàm window.history.back() để quay lại trang trước đó
+        }
+    </script>
 </body>
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<script type="text/javascript">
-</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </html>

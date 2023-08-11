@@ -3,6 +3,7 @@ package com.poly.entity;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -21,13 +22,16 @@ public class Account  implements Serializable{
 	@Id
 	String username;
 	String password;
-	String email;
+	//String email;
 	Integer admin;
 	String fullname;	
 	String sdt;
 	String address;
 	Integer activated;
 	String image;	
+	
+	@Column(unique = true)
+	String email;
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "account")

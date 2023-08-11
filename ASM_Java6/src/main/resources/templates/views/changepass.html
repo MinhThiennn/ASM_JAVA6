@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>FORGOT PASSWORD</title>
@@ -74,44 +74,87 @@ input:focus::placeholder {
 .form-submit:hover{
     border: 1px solid #54a0ff;
 }
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
 </style>
 <body>
-	<div id="wrapper">
+    <div id="wrapper">
         <form method="post" id="form-login">
             <h1 class="form-heading">CHANGE PASSWORD</h1><br>  
             <div class="form-group">
-               <i class="fa fa-user" aria-hidden="true" style="margin-bottom: 3px;"></i>
-                <input type="text" class="form-input" placeholder="User name">
-            </div>            
+                <i class="fa fa-user" aria-hidden="true" style="margin-bottom: 3px;"></i>
+                <input type="text" class="form-input" placeholder="User name" name="username">
+                
+            </div>
+            <!-- Thêm span để hiển thị thông báo lỗi -->
+            <span class="error-message">${usernameError}</span>
+            
             <div class="form-group">
                 <i class="fas fa-key"></i>
-                <input type="password" class="form-input" placeholder="Old password">
-                 <div id="eye">
-                 <i class="far fa-eye"></i>
-                 </div>
+                <input type="password" class="form-input" placeholder="Old password" name="oldPassword" id="oldPassword">
+                <div id="eye" onclick="togglePasswordVisibility('oldPassword')">
+                    <i class="far fa-eye"></i>
+                </div>
             </div>
-             <div class="form-group">
-                 <i class="fas fa-key"></i>
-                <input type="password" class="form-input" placeholder="New password">
-                <div id="eye">
-                 <i class="far fa-eye"></i>
-                 </div>
-            </div>
-             <div class="form-group">
-                <i class="fas fa-key"></i>
-                <input type="password" class="form-input" placeholder="Confirm password">
-                <div id="eye">
-                 <i class="far fa-eye"></i>
-                 </div>
-            </div>            
+            <!-- Thêm span để hiển thị thông báo lỗi -->
+            <span class="error-message">${passwordError}</span>
+            
             <div class="form-group">
-			<input type="submit" formaction="/index" value="back" class="form-submit">
-            <input type="submit" formaction="/login" value="confirm" class="form-submit">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input" placeholder="New password" name="newPassword" id="newPassword">
+                <div id="eye" onclick="togglePasswordVisibility('newPassword')">
+                    <i class="far fa-eye"></i>
+                </div>
             </div>
+            <!-- Thêm span để hiển thị thông báo lỗi -->
+            <span class="error-message">${confirmError}</span>
+            
+            <div class="form-group">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input" placeholder="Confirm password" name="confirmPassword">
+                <div id="eye">
+                    <i class="far fa-eye"></i>
+                </div>
+            </div>
+            <!-- Thêm span để hiển thị thông báo lỗi -->
+            <span class="error-message">${confirmError}</span>
+            
+            <div class="form-group">
+                <input type="submit" formaction="/index" value="back" class="form-submit">
+                <input type="submit" formaction="/password-change" value="confirm" class="form-submit">
+            </div>
+            
         </form>
     </div>
 </body>
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<script type="text/javascript">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+function togglePasswordVisibility(fieldId) {
+    var passwordField = document.getElementById(fieldId);
+    if (passwordField && passwordField.type === "password") {
+        passwordField.type = "text";
+    } else if (passwordField) {
+        passwordField.type = "password";
+    }
+}
 </script>
 </html>
+
